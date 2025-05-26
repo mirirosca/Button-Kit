@@ -1,0 +1,120 @@
+@layer button.variants, button.states, button.sizes, button.modifiers;
+
+@import './variants/variants.css' layer(button);
+@import './sizes/sizes.css' layer(button);
+@import './modifiers/modifiers.css' layer(button);
+@import './states/states.css' layer(button);
+
+@layer button {
+  :root {
+    --ui-btn-glw--display: inline-flex;
+    --ui-btn-glw--place-content: center;
+    --ui-btn-glw--place-items: center;
+    --ui-btn-glw--gap: 1.4rem;
+    --ui-btn-glw--position: relative;
+    --ui-btn-glw--z-index: 2;
+    
+    --ui-btn-glw--color: #ffffff;
+    --ui-btn-glw--background-color: white;
+    --ui-btn-glw--background:linear-gradient(60deg,rgba(180, 67, 255, 0.892) 0%, rgb(245, 71, 117) 50%, rgb(255, 233, 88) 100%);
+    
+    --ui-btn-glw--inline-size: 10rem;
+    --ui-btn-glw--block-size: 52px;
+    --ui-btn-glw--aspect-ratio: auto;
+    --ui-btn-glw--padding: 4px;
+    --ui-btn-glw--border-width: 0;
+    --ui-btn-glw--border-style: solid;
+    --ui-btn-glw--border-color: transparent;
+    --ui-btn-glw--border-radius: 0;
+    --ui-btn-glw--box-shadow: none;
+    
+    --ui-btn-glw--cursor: pointer;
+    
+    --ui-btn-glw--font-size: 1rem;
+    --ui-btn-glw--font-weight: 300;
+    --ui-btn-glw--line-height: 1rem;
+    --ui-btn-glw--text-decoration: none;
+
+    --ui-btn-glw--transition: none;
+    --ui-btn-glw--transform: none;
+
+    /*span*/
+    --ui-btn-glw--sp--display: flex;
+    --ui-btn-glw--sp--place-content: center;
+    --ui-btn-glw--sp--place-items: center;
+    --ui-btn-glw--sp--position: absolute;
+    --ui-btn-glw--sp--bottom: none;
+
+
+    --ui-btn-glw--sp--content: "";
+    --ui-btn-glw--sp--position: absolute;
+    --ui-btn-glw--sp--z-index: 1;
+    
+    --ui-btn-glw--sp--color: #ffffff;
+    --ui-btn-glw--sp--background:rgb(255, 255, 255);
+    --ui-btn-glw--sp--background-color: rgb(255, 255, 255);
+
+    --ui-btn-glw--sp--inline-size: 0;
+    --ui-btn-glw--sp--block-size: 0;
+    --ui-btn-glw--sp--border-width: 0;
+    --ui-btn-glw--sp--border-style: solid;
+    --ui-btn-glw--sp--border-color: transparent;
+
+
+  }
+
+  button[glw] {
+    display: var(--ui-btn-glw--display);
+    place-content: var(--ui-btn-glw--place-content);
+    place-items: var(--ui-btn-glw--place-items);
+    gap: var(--ui-btn-glw--gap);
+    position: var(--ui-btn-glw--position);
+    z-index: var(--ui-btn-glw--z-index);
+
+
+    color: var(--ui-btn-glw--color);
+    background-color: var(--ui-btn-glw--background-color);
+    background: var(--ui-btn-glw--background);
+
+    inline-size: var(--ui-btn-glw--inline-size);
+    block-size: var(--ui-btn-glw--block-size);
+    aspect-ratio: var(--ui-btn-glw--aspect-ratio);
+    padding: var(--ui-btn-glw--padding);
+    border: var(--ui-btn-glw--border-width) var(--ui-btn-glw--border-style) var(--ui-btn-glw--border-color);
+    border-radius: var(--ui-btn-glw--border-radius);
+    box-shadow: var(--ui-btn-glw--box-shadow);
+
+    cursor: var(--ui-btn-glw--cursor);
+    appearance: none;
+
+    font-size: var(--ui-btn-glw--font-size);
+    font-weight: var(--ui-btn-glw--font-weight);
+    line-height: var(--ui-btn-glw--line-height);
+    text-decoration: var(--ui-btn-glw--text-decoration);
+
+    transition: var(--ui-btn-glw--transition);
+    transform: var(--ui-btn-glw--transform);
+
+    span{
+      display: var(--ui-btn-glw--sp--display);
+      place-content: var(--ui-btn-glw--sp--place-content);
+      place-items: var(--ui-btn-glw--sp--place-items);
+      position: var(--ui-btn-glw--sp--position);
+      bottom: var(--ui-btn-glw--sp--bottom);
+
+      position: var(--ui-btn-glw--sp--position);
+      z-index: var(--ui-btn-glw--sp--z-index);
+
+      color: var(--ui-btn-glw--sp--color);
+      background-color: var(--ui-btn-glw--sp--background-color);
+      background: var(--ui-btn-glw--sp--background);
+
+      inline-size: var(--ui-btn-glw--sp--inline-size);
+      block-size: var(--ui-btn-glw--sp--block-size);
+      border-width: var(--ui-btn-glw--sp--border-width);
+      border-style: var(--ui-btn-glw--sp--border-style);
+      border-color: var(--ui-btn-glw--sp--border-color);
+      border-radius: var(--ui-btn-glw--border-radius);
+    }
+  }
+}

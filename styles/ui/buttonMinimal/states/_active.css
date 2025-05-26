@@ -1,0 +1,30 @@
+@layer active {
+  :root{
+    --ui-btn-mnl--s-act--color: var(--ui-btn-mnl--color);
+    --ui-btn-mnl--s-act--background-color: color-mix(in srgb, var(--ui-btn-mnl--background-color) 90%, black 15%);
+
+    --ui-btn-mnl--s-act--border-width: var(--ui-btn-mnl--border-width);
+    --ui-btn-mnl--s-act--border-style: var(--ui-btn-mnl--border-style);
+    --ui-btn-mnl--s-act--border-color: var(--ui-btn-mnl--border-color);
+    --ui-btn-mnl--s-act--border-radius: var(--ui-btn-mnl--border-radius);
+    --ui-btn-mnl--s-act--box-shadow: none;
+    --ui-btn-mnl--s-act--text-decoration: var(--ui-btn-mnl--text-decoration);
+
+    --ui-btn-mnl--s-act--transition: var(--ui-btn-mnl--transition);
+    --ui-btn-mnl--s-act--transform: translateY(0px);
+  }
+
+  button:active{
+    --ui-btn-mnl--color: var(--ui-btn-mnl--color);
+    --ui-btn-mnl--background-color: var(--ui-btn-mnl--s-act--background-color);
+    --ui-btn-mnl--border-width: var(--ui-btn-mnl--s-act--border-width);
+    --ui-btn-mnl--border-style: var(--ui-btn-mnl--s-act--border-style);
+    --ui-btn-mnl--border-color: var(--ui-btn-mnl--s-act--border-color);
+    --ui-btn-mnl--border-radius: var(--ui-btn-mnl--s-act--border-radius);
+    --ui-btn-mnl--box-shadow: var(--ui-btn-mnl--s-act--box-shadow);
+    --ui-btn-mnl--text-decoration: var(--ui-btn-mnl--s-act--text-decoration);
+
+    --ui-btn-mnl--transition: var(--ui-btn-mnl--s-act--transition);
+    --ui-btn-mnl--transform: var(--ui-btn-mnl--s-act--transform);
+  }
+}

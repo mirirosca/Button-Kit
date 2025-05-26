@@ -1,0 +1,9 @@
+@layer elevated {
+    :root{
+        --ui-btn-glw--m-vs-elevated--box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    button[elevated]{
+        --ui-btn-glw--box-shadow: var(--ui-btn-glw--m-vs-elevated--box-shadow);
+    }
+}

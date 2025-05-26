@@ -1,0 +1,42 @@
+@layer tertiary {
+  :root{
+    --ui-btn-glw--v-ter--sp--bottom: 6px;
+
+    --ui-btn-glw--v-ter--color: rgb(0, 0, 0);
+    --ui-btn-glw--v-ter--background: rgb(255, 255, 255);
+
+    /*span*/
+    --ui-btn-glw--v-ter--sp--color: rgb(0, 0, 0);
+    --ui-btn-glw--v-ter--sp--background: linear-gradient(60deg,rgba(180, 67, 255, 0.892) 0%, rgb(245, 71, 117) 50%, rgb(255, 233, 88) 100%);;
+
+    --ui-btn-glw--v-ter--sp--inline-size: 65%;
+    --ui-btn-glw--v-ter--sp--block-size: 3px;
+
+    /*hover*/
+    --ui-btn-glw--v-ter--s-hov--color: var(--ui-btn-glw--s-hov--background-color);
+    --ui-btn-glw--v-ter--s-hov--background-color: transparent;
+
+    --ui-btn-glw--v-ter--s-hov--text-decoration: underline;
+  }
+
+  button[glw-ter]{
+    --ui-btn-glw--sp--bottom: var(--ui-btn-glw--v-ter--sp--bottom); 
+
+    --ui-btn-glw--color: var(--ui-btn-glw--v-ter--color);
+    --ui-btn-glw--background: var(--ui-btn-glw--v-ter--background);
+
+    /*span*/
+    --ui-btn-glw--sp--color: var(--ui-btn-glw--v-ter--sp--color);
+    --ui-btn-glw--sp--background: var(--ui-btn-glw--v-ter--sp--background);
+
+    --ui-btn-glw--sp--inline-size: var(--ui-btn-glw--v-ter--sp--inline-size);
+    --ui-btn-glw--sp--block-size: var(--ui-btn-glw--v-ter--sp--block-size);
+
+      
+    /*hover*/
+    --ui-btn-glw--s-hov--color:var(--ui-btn-glw--v-ter--s-hov--color);
+    --ui-btn-glw--s-hov--background-color:var(--ui-btn-glw--v-ter--s-hov--background-color);
+
+    --ui-btn-glw--s-hov--text-decoration:var(--ui-btn-glw--v-ter--s-hov--text-decoration);
+  }
+}

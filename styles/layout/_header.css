@@ -1,0 +1,92 @@
+@layer header{
+  body{
+    >header{
+      h1{
+
+        max-inline-size: 600px;
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      >section[filter]{
+        display: flex;
+        flex-flow: row nowrap;
+        place-content: center;
+        place-items: center;
+        gap: 2rem;
+
+        section{
+          display: flex;
+          flex-flow: row nowrap;
+          place-content: center;
+          place-items: center;
+          gap: 0.5rem;
+
+          label{
+            font-size: 1.2rem;
+          }
+
+          select{
+            
+            color: #333;
+            background-color: white;
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 0.8rem center;
+            background-size: 1rem;
+
+            inline-size: 140px;
+            padding: 0.5rem 2.5rem 0.5rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 0.8rem;
+
+          }
+        }
+
+        section:last-of-type {
+          display: flex;
+          flex-flow: row nowrap;
+          place-content: center;
+          place-items: center;
+          gap: 0.5rem;
+
+          label {
+            font-size: 1.2rem;
+          }
+
+          input[type="color"] {
+            color: #333;
+            background-color: white;
+            appearance: none;
+
+            inline-size: 140px;
+            block-size: 33px;
+            padding: 0.3rem 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            font-size: 0.8rem;
+
+            transition: border-color 0.2s, box-shadow 0.2s;
+          }
+        }
+
+      }
+    }
+  }
+    @media (max-width: 768px) {
+    body > header > section[filter] {
+      flex-flow: column nowrap;
+      place-content: center;
+      place-items: center;
+
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "./_header.css" layer(layout);
+@import "./_main.css" layer(layout);
+@import "./_footer.css" layer(layout);
+@import "./_core.css" layer(layout);
+
+@layer layout{
+    :root{
+        --ly--color: rgb(110, 170, 196);
+    }
+}

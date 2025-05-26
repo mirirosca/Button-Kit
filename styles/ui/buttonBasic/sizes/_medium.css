@@ -1,0 +1,11 @@
+@layer medium {
+     :root{
+      --ui-btn--s-medium--inline-size: 140px;
+      --ui-btn--s-medium--block-size: 42px;
+    }
+
+    button[medium]{
+      --ui-btn--inline-size: var(--ui-btn--s-medium--inline-size);
+      --ui-btn--block-size: var(--ui-btn--s-medium--block-size);
+    }
+}

@@ -1,0 +1,31 @@
+@layer hover {
+  :root{
+    --ui-btn--s-hov--color: var(--ui-btn--color);
+    --ui-btn--s-hov--background-color: color-mix(in srgb, var(--ui-btn--background-color) 90%, white 25%);
+
+    --ui-btn--s-hov--border-width: var(--ui-btn--border-width);
+    --ui-btn--s-hov--border-style: var(--ui-btn--border-style);
+    --ui-btn--s-hov--border-color: var(--ui-btn--border-color);
+    --ui-btn--s-hov--border-radius: var(--ui-btn--border-radius);
+    --ui-btn--s-hov--box-shadow: var(--ui-btn--box-shadow);
+    --ui-btn--s-hov--text-decoration: var(--ui-btn--text-decoration);
+
+    --ui-btn--s-hov--transition: var(--ui-btn--transition);
+    --ui-btn--s-hov--transform: var(--ui-btn--transform);
+  }
+
+  button:hover{
+    --ui-btn--color:var(--ui-btn--s-hov--color);
+    --ui-btn--background-color:var(--ui-btn--s-hov--background-color);
+
+    --ui-btn--border-width: var(--ui-btn--s-hov--border-width);
+    --ui-btn--border-style: var(--ui-btn--s-hov--border-style);
+    --ui-btn--border-color: var(--ui-btn--s-hov--border-color);
+    --ui-btn--border-radius: var(--ui-btn--s-hov--border-radius);
+    --ui-btn--box-shadow: var(--ui-btn--s-hov--box-shadow);
+    --ui-btn--text-decoration: var(--ui-btn--s-hov--text-decoration);
+
+    --ui-btn--transition: var(--ui-btn--s-hov--transition);
+    --ui-btn--transform: var(--ui-btn--s-hov--transform);
+  }
+}

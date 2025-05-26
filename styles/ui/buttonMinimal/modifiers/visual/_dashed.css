@@ -1,0 +1,8 @@
+@layer dashed{
+  :root{
+    --ui-btn--m-vs-dashed--border-style: dashed;
+  }
+  button[dashed]{
+    --ui-btn--border-style: var(--ui-btn--m-vs-dashed--border-style);
+  }
+}

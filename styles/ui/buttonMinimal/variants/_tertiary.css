@@ -1,0 +1,55 @@
+@layer tertiary {
+  :root{
+    --ui-btn-mnl--v-ter--color: var(--ui-btn-mnl--color);
+    --ui-btn-mnl--v-ter--background-color: transparent;
+
+    --ui-btn-mnl--v-ter--border-width: 0;
+
+    /*hover*/
+    --ui-btn-mnl--v-ter--s-hov--background-color: transparent;
+
+    --ui-btn-mnl--v-ter--s-hov--border-width: 0;
+    --ui-btn-mnl--v-ter--s-hov--box-shadow:  0px 12px 1px var(--ui-btn-mnl--color),  0 0 4px var(--ui-btn-mnl--background-color);
+
+    /*active*/
+    --ui-btn-mnl--v-ter--s-act--background-color: transparent;
+
+    --ui-btn-mnl--v-ter--s-act--border-width: var(--ui-btn-mnl--v-ter--border-width);
+    --ui-btn-mnl--v-ter--s-act--border-color: var(--ui-btn-mnl--s-act--background-color);
+    --ui-btn-mnl--v-ter--s-act--box-shadow: 0 0 4px var(--ui-btn-mnl--background-color);
+
+    /*disabled*/
+    --ui-btn-mnl--v-sec--s-dis--background-color: transparent;
+    --ui-btn-mnl--v-sec--s-dis--color: var(--ui-btn-mnl--s-dis--background-color);
+
+    --ui-btn-mnl--v-ter--s-dis--border-width: 0;
+
+  }
+
+  button[mnl-ter]{
+    --ui-btn-mnl--color: var(--ui-btn-mnl--v-ter--color);
+    --ui-btn-mnl--background-color: var(--ui-btn-mnl--v-ter--background-color);
+
+    --ui-btn-mnl--border-width: var(--ui-btn-mnl--v-ter--border-width);
+
+    /*hover*/
+    --ui-btn-mnl--s-hov--background-color:var(--ui-btn-mnl--v-ter--s-hov--background-color);
+
+    --ui-btn-mnl--s-hov--border-width: var(--ui-btn-mnl--v-ter--s-hov--border-width);
+    --ui-btn-mnl--s-hov--box-shadow: var(--ui-btn-mnl--v-ter--s-hov--box-shadow);
+
+    /*active*/
+    --ui-btn-mnl--s-act--background-color: var(--ui-btn-mnl--v-ter--s-act--background-color);
+
+    --ui-btn-mnl--s-act--border-width: var(--ui-btn-mnl--v-ter--s-act--border-width);
+    --ui-btn-mnl--s-act--border-color: var(--ui-btn-mnl--v-ter--s-act--border-color);
+    --ui-btn-mnl--s-act--box-shadow: var(--ui-btn-mnl--v-ter--s-act--box-shadow);
+
+    /*disabled*/
+    --ui-btn-mnl--s-dis--background-color: var(--ui-btn-mnl--v-sec--s-dis--background-color);
+    --ui-btn-mnl--s-dis--color: var(--ui-btn-mnl--v-sec--s-dis--color);
+
+    --ui-btn-mnl--s-dis--border-width: var(--ui-btn-mnl--s-dis--border-width);
+
+  }
+}

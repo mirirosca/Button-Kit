@@ -1,0 +1,30 @@
+@layer destructive {
+  :root{
+    --ui-btn-glw--v-dest--color: #dd0c0c;
+    --ui-btn-glw--v-dest--background-color: var(--ui-btn-glw--v-sec--background-color);
+
+    --ui-btn-glw--v-dest--border-width: var(--ui-btn-glw--v-sec--border-width);
+    --ui-btn-glw--v-dest--border-color: var(--ui-btn-glw--v-dest--color);
+
+    --ui-btn-glw--v-dest--s-hov--color: white;
+    --ui-btn-glw--v-dest--s-hov--background-color: var(--ui-btn-glw--v-dest--color);
+
+    --ui-btn-glw--v-dest--s-hov--border-width: var(--ui-btn-glw--v-sec--border-width);
+    --ui-btn-glw--v-dest--s-hov--border-color: var(--ui-btn-glw--v-dest--color);
+  
+  }
+
+  button[glw-dest]{
+    --ui-btn-glw--color: var(--ui-btn-glw--v-dest--color);
+    --ui-btn-glw--background-color: var(--ui-btn-glw--v-sec--background-color);
+
+    --ui-btn-glw--border-width: var(--ui-btn-glw--v-dest--border-width);
+    --ui-btn-glw--border-color: var(--ui-btn-glw--v-dest--border-color);
+
+    
+    --ui-btn-glw--s-hov--background-color:var(--ui-btn-glw--v-dest--s-hov--background-color);
+    --ui-btn-glw--s-hov--color:var(--ui-btn-glw--v-dest--s-hov--color);
+    --ui-btn-glw--s-hov--border-width:var(--ui-btn-glw--v-dest--s-hov--border-width);
+    --ui-btn-glw--s-hov--border-color:var(--ui-btn-glw--v-dest--s-hov--border-color);
+  }
+}

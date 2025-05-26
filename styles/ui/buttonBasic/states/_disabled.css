@@ -1,0 +1,31 @@
+@layer disabled{
+  :root{
+    --ui-btn--s-dis--color: var(--ui-btn--color);
+    --ui-btn--s-dis--background-color: rgb(204, 198, 198);
+
+    --ui-btn--s-dis--border-width: var(--ui-btn--border-width);
+    --ui-btn--s-dis--border-style: var(--ui-btn--border-style);
+    --ui-btn--s-dis--border-color: var(--ui-btn--border-color);
+    --ui-btn--s-dis--border-radius: var(--ui-btn--border-radius);
+    --ui-btn--s-dis--box-shadow: var(--ui-btn--box-shadow);
+    --ui-btn--s-dis--text-decoration: var(--ui-btn--text-decoration);
+
+    --ui-btn--s-dis--transition: var(--ui-btn--transition);
+    --ui-btn--s-dis--transform: var(--ui-btn--transform);
+
+  }
+  button[disabled]{
+    --ui-btn--color:var(--ui-btn--s-dis--color);
+    --ui-btn--background-color:var(--ui-btn--s-dis--background-color);
+
+    --ui-btn--border-width: var(--ui-btn--s-dis--border-width);
+    --ui-btn--border-style: var(--ui-btn--s-dis--border-style);
+    --ui-btn--border-color: var(--ui-btn--s-dis--border-color);
+    --ui-btn--border-radius: var(--ui-btn--s-dis--border-radius);
+    --ui-btn--box-shadow: var(--ui-btn--s-dis--box-shadow);
+    --ui-btn--text-decoration: var(--ui-btn--s-dis--text-decoration);
+
+    --ui-btn--transition: var(--ui-btn--s-dis--transition);
+    --ui-btn--transform: var(--ui-btn--s-dis--transform);
+  }
+}

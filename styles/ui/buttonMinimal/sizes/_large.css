@@ -1,0 +1,20 @@
+@layer large {
+     :root{
+      --ui-btn-mnl--s-large--inline-size: 190px;
+      --ui-btn-mnl--s-large--block-size: 62px;
+
+      --ui-btn-mnl--s-large--border-width: 3.5px;
+
+      --ui-btn-mnl--s-large--font-size: 1.3rem;
+    }
+
+    button[large]{
+      --ui-btn-mnl--inline-size: var(--ui-btn-mnl--s-large--inline-size);
+      --ui-btn-mnl--block-size: var(--ui-btn-mnl--s-large--block-size);
+
+      --ui-btn-mnl--border-width: var(--ui-btn-mnl--s-large--border-width);
+
+      --ui-btn-mnl--font-size: var(--ui-btn-mnl--s-large--font-size);
+    }
+  
+}

@@ -1,0 +1,71 @@
+@layer button.variants, button.states, button.sizes, button.modifiers;
+
+@import './variants/variants.css' layer(button);
+@import './sizes/sizes.css' layer(button);
+@import './modifiers/modifiers.css' layer(button);
+@import './states/states.css' layer(button);
+
+@layer button {
+  :root {
+      --ui-btn-mnl--display: inline-flex;
+      --ui-btn-mnl--place-content: center;
+      --ui-btn-mnl--place-items: center;
+      --ui-btn-mnl--gap: 1.4rem;
+      --ui-btn-mnl--position: static;
+      
+      --ui-btn-mnl--color: #141211;
+      --ui-btn-mnl--background-color: #a1d1ef;
+      
+      --ui-btn-mnl--inline-size: 10rem;
+      --ui-btn-mnl--block-size: 52px;
+      --ui-btn-mnl--aspect-ratio: auto;
+      --ui-btn-mnl--padding: auto;
+      --ui-btn-mnl--border-width: 1px;
+      --ui-btn-mnl--border-style: solid;
+      --ui-btn-mnl--border-color: #141211;
+      --ui-btn-mnl--border-radius: 0;
+      --ui-btn-mnl--box-shadow: none;
+      
+      --ui-btn-mnl--cursor: pointer;
+      
+      --ui-btn-mnl--font-size: 1rem;
+      --ui-btn-mnl--font-weight: 300;
+      --ui-btn-mnl--line-height: 1rem;
+      --ui-btn-mnl--text-decoration: none;
+
+      --ui-btn-mnl--transition: all 180ms;
+      --ui-btn-mnl--transform: none;
+
+  }
+
+  button[mnl] {
+    display: var(--ui-btn-mnl--display);
+    place-content: var(--ui-btn-mnl--place-content);
+    place-items: var(--ui-btn-mnl--place-items);
+    gap: var(--ui-btn-mnl--gap);
+    position: var(--ui-btn-mnl--position);
+
+
+    color: var(--ui-btn-mnl--color);
+    background-color: var(--ui-btn-mnl--background-color);
+
+    inline-size: var(--ui-btn-mnl--inline-size);
+    block-size: var(--ui-btn-mnl--block-size);
+    aspect-ratio: var(--ui-btn-mnl--aspect-ratio);
+    padding: var(--ui-btn-mnl--padding);
+    border: var(--ui-btn-mnl--border-width) var(--ui-btn-mnl--border-style) var(--ui-btn-mnl--border-color);
+    border-radius: var(--ui-btn-mnl--border-radius);
+    box-shadow: var(--ui-btn-mnl--box-shadow);
+
+    cursor: var(--ui-btn-mnl--cursor);
+    appearance: none;
+
+    font-size: var(--ui-btn-mnl--font-size);
+    font-weight: var(--ui-btn-mnl--font-weight);
+    line-height: var(--ui-btn-mnl--line-height);
+    text-decoration: var(--ui-btn-mnl--text-decoration);
+
+    transition: var(--ui-btn-mnl--transition);
+    transform: var(--ui-btn-mnl--transform);
+  }
+}

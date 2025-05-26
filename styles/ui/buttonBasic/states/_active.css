@@ -1,0 +1,23 @@
+@layer active {
+  :root{
+    --ui-btn--s-act--color: var(--ui-btn--color);
+    --ui-btn--s-act--background-color: color-mix(in srgb, var(--ui-btn--background-color) 90%, rgb(0, 0, 0) 85%);
+    --ui-btn--s-act--border-width: var(--ui-btn--border-width);
+    --ui-btn--s-act--border-style: var(--ui-btn--border-style);
+    --ui-btn--s-act--border-color: var(--ui-btn--border-color);
+    --ui-btn--s-act--border-radius: var(--ui-btn--border-radius);
+    --ui-btn--s-act--box-shadow: var(--ui-btn--box-shadow);
+    --ui-btn--s-act--text-decoration: var(--ui-btn--text-decoration);
+  }
+
+  button:active{
+    --ui-btn--color: var(--ui-btn--s-act--color);
+    --ui-btn--background-color: var(--ui-btn--s-act--background-color);
+    --ui-btn--border-width: var(--ui-btn--s-act--border-width);
+    --ui-btn--border-style: var(--ui-btn--s-act--border-style);
+    --ui-btn--border-color: var(--ui-btn--s-act--border-color);
+    --ui-btn--border-radius: var(--ui-btn--s-act--border-radius);
+    --ui-btn--box-shadow: var(--ui-btn--s-act--box-shadow);
+    --ui-btn--text-decoration: var(--ui-btn--s-act--text-decoration);
+  }
+}

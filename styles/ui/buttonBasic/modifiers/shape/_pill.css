@@ -1,0 +1,9 @@
+@layer pill {
+  :root{
+    --ui-btn--m-shp-pill--border-radius: 1.7rem;
+  }
+
+  button[pill]{
+    --ui-btn--border-radius: var(--ui-btn--m-shp-pill--border-radius);
+  }
+}

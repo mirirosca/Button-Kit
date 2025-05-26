@@ -1,0 +1,24 @@
+@layer circle {
+    :root {
+        --ui-btn--m-shp-circle--place-content: center;
+        --ui-btn--m-shp-circle--place-items: center;
+        
+        --ui-btn--m-shp-circle--inline-size: 52px;
+        --ui-btn--m-shp-circle--block-size: var(--ui-btn--m-shp-circle--inline-size);
+        --ui-btn--m-shp-circle--block-size: var(--ui-btn--m-shp-circle--inline-size);
+        --ui-btn--m-shp-circle--aspect-ratio: 1;
+        --ui-btn--m-shp-circle--padding: 0;
+        --ui-btn--m-shp-circle--border-radius: 50%;
+    }
+
+    button[circle] {
+        --ui-btn--place-content: var(--ui-btn--m-shp-circle--place-content);
+        --ui-btn--place-items: var(--ui-btn--m-shp-circle--place-items);
+
+        --ui-btn--inline-size: var(--ui-btn--m-shp-circle--inline-size);
+        --ui-btn--block-size: var(--ui-btn--m-shp-circle--block-size);
+        --ui-btn--aspect-ratio: var(--ui-btn--m-shp-circle--aspect-ratio);
+        --ui-btn--padding: var(--ui-btn--m-shp-circle--padding);
+        --ui-btn--border-radius: var(--ui-btn--m-shp-circle--border-radius);
+    }
+}

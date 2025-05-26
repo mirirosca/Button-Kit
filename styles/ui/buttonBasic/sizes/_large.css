@@ -1,0 +1,20 @@
+@layer large {
+     :root{
+      --ui-btn--s-large--inline-size: 190px;
+      --ui-btn--s-large--block-size: 62px;
+
+      --ui-btn--s-large--border-width: 3.5px;
+
+      --ui-btn--s-large--font-size: 1.3rem;
+    }
+
+    button[large]{
+      --ui-btn--inline-size: var(--ui-btn--s-large--inline-size);
+      --ui-btn--block-size: var(--ui-btn--s-large--block-size);
+
+      --ui-btn--border-width: var(--ui-btn--s-large--border-width);
+
+      --ui-btn--font-size: var(--ui-btn--s-large--font-size);
+    }
+  
+}

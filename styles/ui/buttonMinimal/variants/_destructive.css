@@ -1,0 +1,27 @@
+@layer destructive {
+  :root{
+    --ui-btn-mnl--v-dest--color: #dd0c0c;
+    --ui-btn-mnl--v-dest--background-color: transparent;
+
+    --ui-btn-mnl--v-dest--border-color: var(--ui-btn-mnl--v-dest--color);
+    
+    /*hover*/
+    --ui-btn-mnl--v-dest--s-hov--color: var(--ui-btn-mnl--v-dest--color);
+    --ui-btn-mnl--v-dest--s-hov--background-color: transparent;
+
+    --ui-btn-mnl--v-dest--s-hov--border-color: var(--ui-btn-mnl--v-dest--color);
+  }
+
+  button[mnl-dest]{
+    --ui-btn-mnl--color: var(--ui-btn-mnl--v-dest--color);
+    --ui-btn-mnl--background-color: var(--ui-btn-mnl--v-dest--background-color);
+
+    --ui-btn-mnl--border-color: var(--ui-btn-mnl--v-dest--border-color);
+
+    --ui-btn-mnl--s-hov--color: var(--ui-btn-mnl--v-dest--s-hov--color);
+    --ui-btn-mnl--s-hov--background-color:var(--ui-btn-mnl--v-dest--s-hov--background-color);
+    
+    --ui-btn-mnl--s-hov--border-color: var(--ui-btn-mnl--v-dest--s-hov--border-color);
+  
+  }
+}

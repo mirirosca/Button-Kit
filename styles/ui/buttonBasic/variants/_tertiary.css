@@ -1,0 +1,49 @@
+@layer tertiary {
+  :root{
+    --ui-btn--v-ter--color: var(--ui-btn--background-color);
+    --ui-btn--v-ter--background-color: transparent;
+
+    /*hover*/
+    --ui-btn--v-ter--s-hov--color: var(--ui-btn--s-hov--background-color);
+    --ui-btn--v-ter--s-hov--background-color: transparent;
+
+    --ui-btn--v-ter--s-hov--text-decoration: underline;
+
+    /*active*/
+    --ui-btn--v-ter--s-act--color: var(--ui-btn--s-act--background-color);
+    --ui-btn--v-ter--s-act--background-color: transparent;
+
+    --ui-btn--v-ter--s-act--text-decoration: underline;
+
+    /*disabled*/
+    --ui-btn--v-ter--s-dis--background-color: transparent;
+    --ui-btn--v-ter--s-dis--color: var(--ui-btn--s-dis--background-color);
+
+    --ui-btn--v-ter--s-dis--text-decoration: underline;
+
+  }
+
+  button[bs-ter]{
+    --ui-btn--color: var(--ui-btn--v-ter--color);
+    --ui-btn--background-color: var(--ui-btn--v-ter--background-color);
+
+    /*hover*/
+    --ui-btn--s-hov--color:var(--ui-btn--v-ter--s-hov--color);
+    --ui-btn--s-hov--background-color:var(--ui-btn--v-ter--s-hov--background-color);
+
+    --ui-btn--s-hov--text-decoration:var(--ui-btn--v-ter--s-hov--text-decoration);
+
+    /*active*/
+    --ui-btn--s-act--color:var(--ui-btn--v-ter--s-act--color);
+    --ui-btn--s-act--background-color:var(--ui-btn--v-ter--s-act--background-color);
+
+    --ui-btn--s-act--text-decoration:var(--ui-btn--v-ter--s-act--text-decoration);
+
+    /*disabled*/
+    --ui-btn--s-dis--background-color: var(--ui-btn--v-ter--s-dis--background-color);
+    --ui-btn--s-dis--color: var(--ui-btn--v-ter--s-dis--color);
+
+    --ui-btn--s-dis--text-decoration: var(--ui-btn--v-ter--s-dis--text-decoration);
+
+  }
+}

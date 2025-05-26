@@ -1,0 +1,15 @@
+@layer small {
+   :root{
+      --ui-btn--s-small--inline-size: 100px;
+      --ui-btn--s-small--block-size: 2rem;
+
+      --ui-btn--s-small--border-width: 2px;
+    }
+
+    button[small]{
+      --ui-btn--inline-size: var(--ui-btn--s-small--inline-size);
+      --ui-btn--block-size: var(--ui-btn--s-small--block-size);
+
+      --ui-btn--border-width: var(--ui-btn--s-small--border-width);
+    }
+}

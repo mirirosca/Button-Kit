@@ -1,0 +1,24 @@
+@layer core{
+
+  body{
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center;
+    place-items: center;
+    gap: 4.5rem;
+
+    background-color: rgb(242, 233, 220);
+
+    font-family: "Montserrat", sans-serif;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+      box-sizing: border-box;
+      font-family:"Lilita One", sans-serif;
+    }
+  }
+}

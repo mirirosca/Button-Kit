@@ -1,0 +1,27 @@
+@layer secondary {
+   :root {
+    /*span*/
+    --ui-btn-glw--v-sec--sp--color: rgb(0, 0, 0);
+    --ui-btn-glw--v-sec--sp--background-color: rgb(255, 255, 255);
+
+    --ui-btn-glw--v-sec--sp--inline-size: calc(var(--ui-btn-glw--inline-size) * 0.94);
+    --ui-btn-glw--v-sec--sp--block-size: calc(var(--ui-btn-glw--block-size) * 0.83);
+
+    --ui-btn-glw--v-sec--sp--border-radius: var(--ui-btn-glw--border-radius);
+
+    /*hover*/
+  }
+
+  button[glw-sec] {
+    /*span*/
+    --ui-btn-glw--sp--color: var(--ui-btn-glw--v-sec--sp--color);
+    --ui-btn-glw--sp--background-color: var(--ui-btn-glw--v-sec--sp--background-color);
+
+    --ui-btn-glw--sp--inline-size: var(--ui-btn-glw--v-sec--sp--inline-size);
+    --ui-btn-glw--sp--block-size: var(--ui-btn-glw--v-sec--sp--block-size);
+
+    --ui-btn-glw--sp--border-radius: var(--ui-btn-glw--v-sec--sp--border-radius);
+        
+    /*hover*/
+  }
+}

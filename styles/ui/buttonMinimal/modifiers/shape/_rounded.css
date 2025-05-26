@@ -1,0 +1,9 @@
+@layer rounded {
+    :root{
+        --ui-btn-mnl--m-shp-rounded--border-radius: 0.3rem;
+    }
+
+    button[rounded]{
+        --ui-btn-mnl--border-radius: var(--ui-btn-mnl--m-shp-rounded--border-radius);
+    }
+}
