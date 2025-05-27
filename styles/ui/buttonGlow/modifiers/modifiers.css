@@ -1,9 +1,0 @@
-@import "./shape/_circle.css" layer(modifiers);
-@import "./shape/_pill.css" layer(modifiers);
-@import "./shape/_rounded.css" layer(modifiers);
-@import "./shape/_asymmetric.css" layer(modifiers);
-
-@import "./visual/_blur.css" layer(modifiers);
-@import "./visual/_elevated.css" layer(modifiers);
-@import "./visual/_insetShadow.css" layer(modifiers);
-@import "./visual/_dashed.css" layer(modifiers);

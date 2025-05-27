@@ -1,8 +1,0 @@
-@layer asymmetric{
-  :root{
-    --ui-btn-glw-m-vs-asymmetric--border-radius: 0.3rem 0.3rem 2.2rem 0.3rem;
-  }
-  button[asymmetric]{
-    --ui-btn-glw--border-radius: var(--ui-btn-glw-m-vs-asymmetric--border-radius);
-  }
-}

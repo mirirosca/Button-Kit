@@ -27,9 +27,6 @@
           tr[default]{
             /*basic*/
 
-            /*bug: il btn basic default non funziona in tabella 
-            se non specifichi il css*/
-
             button[bs-prim]{
               background-color: var(--ly--color);
 
@@ -190,26 +187,6 @@
           } 
         }
       }
-    }
-  }
-   @media (max-width: 768px) {
-    section[btn-display]{
-      inline-size: 80%;
-    }
-
-    section[btn-display] table button {
-      inline-size: 140px;
-      block-size: 42px;
-    }
-  }
-
-  @media (max-width: 576px) {
-    section[btn-display]{
-      inline-size: 80%;
-    }
-    body main section[btn-display] table button {
-      inline-size: 100px;
-      block-size: 2rem;
     }
   }
 }
