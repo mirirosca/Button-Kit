@@ -1,6 +1,36 @@
 @layer footer{
   
   footer{
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+
+    a {
+      color: black;
+
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    a:last-of-type {
+      text-align: center;
+      
+      span{
+        font-size:12px;
+      }
+    }
     
+    svg{
+      width: 32px;
+
+      path:first-of-type{
+        fill: var(--ly--color);
+      }
+    }
   }
 }
