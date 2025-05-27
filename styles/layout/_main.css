@@ -28,6 +28,7 @@
             /*basic*/
 
             button[bs-prim]{
+              color: var(--ly--text-color);
               background-color: var(--ly--color);
 
               &:hover{
@@ -43,11 +44,11 @@
               border-color: var(--ly--color);
 
               &:hover{
-                color: white;
+                color: var(--ly--text-color);
                 background-color: color-mix(in srgb, var(--ly--color) 90%, white 80%);
               }
               &:active{
-                color: white;
+                color: var(--ly--text-color);
                 background-color: color-mix(in srgb, var(--ly--color) 90%, white 50%);
               }
             }
@@ -67,6 +68,7 @@
 
             /*minimal*/
             button[mnl-prim]{
+              color: var(--ly--text-color);
               background-color: var(--ly--color);
               &:active{
                 background-color: color-mix(in srgb, var(--ly--color) 90%, black 15%);
@@ -94,10 +96,12 @@
           tr[hover]{
             /*basic*/
             button[bs-prim]{
+              color: var(--ly--text-color);
               background-color: color-mix(in srgb, var(--ly--color) 90%, white 25%);
             }
+
             button[bs-sec]{
-              color: white;
+              color: var(--ly--text-color);
               border-color: var(--ly--color);
               background-color: color-mix(in srgb, var(--ly--color) 90%, white 80%);
             }
@@ -107,7 +111,9 @@
 
             /*minimal*/
             button[mnl-prim]{
+              color: var(--ly--text-color);
               background-color: var(--ly--color);
+
               box-shadow:  0px 12px 1px #141211;
 
               &:hover{
@@ -142,11 +148,12 @@
           tr[pressed]{
             /*basic*/
             button[bs-prim]{
+              color: var(--ly--text-color);
               background-color: color-mix(in srgb, var(--ly--color) 90%, black 85%);
             }
 
             button[bs-sec]{
-              color: white;
+              color: var(--ly--text-color);
               background-color: color-mix(in srgb, var(--ly--color) 90%, white 50%);
 
               border-color: var(--ly--color);
@@ -158,6 +165,7 @@
 
             /*minimal*/
             button[mnl-prim]{
+              color: var(--ly--text-color);
               background-color: color-mix(in srgb, var(--ly--color) 90%, black 15%);
 
               &:hover{
@@ -167,6 +175,7 @@
             }
 
             button[mnl-sec]{
+              
               background-color: color-mix(in srgb, var(--ly--color) 90%, white 95%);
               border-color: #141211;
               

@@ -4,6 +4,34 @@ const colorInput = document.getElementById("color");
 colorInput.addEventListener("input", (e) => {
   const color = e.target.value;
   document.documentElement.style.setProperty("--ly--color", color);
+
+  console.log(color);
+  //destructor
+  const [, r, g, b] = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
+  console.log(r, g, b);
+
+  const rValue = Math.round(parseInt(r, 16));
+  const gValue = Math.round(parseInt(g, 16));
+  const bValue = Math.round(parseInt(b, 16));
+
+  const sRGB_red = rValue / 255;
+  const sRGB_green = gValue / 255;
+  const sRGB_blue = bValue / 255;
+
+  const red = sRGB_red <= 0.03928 ? sRGB_red / 12.92 : Math.pow((sRGB_red + 0.055) / 1.055, 2.4);
+  const green = sRGB_green <= 0.03928 ? sRGB_green / 12.92 : Math.pow((sRGB_green + 0.055) / 1.055, 2.4);
+  const blue = sRGB_blue <= 0.03928 ? sRGB_blue / 12.92 : Math.pow((sRGB_blue + 0.055) / 1.055, 2.4);
+
+  // For the sRGB colorspace, the relative luminance of a color is defined as:
+  const luminance =  0.2126 * red + 0.7152 * green + 0.0722 * blue;
+  console.log(luminance);
+
+  if(luminance <= 0.5){
+    document.documentElement.style.setProperty("--ly--text-color", "#fff");
+  }else{
+    document.documentElement.style.setProperty("--ly--text-color", "#000");
+  }
+
 });
 
 selects.forEach((select) => {
