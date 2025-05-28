@@ -5,7 +5,6 @@ colorInput.addEventListener("input", (e) => {
   const color = e.target.value;
   document.documentElement.style.setProperty("--ly--color", color);
 
-  console.log(color);
   //destructor
   const [, r, g, b] = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
   console.log(r, g, b);

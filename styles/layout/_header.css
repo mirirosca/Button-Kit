@@ -1,9 +1,31 @@
 @layer header{
   body{
     >header{
+      display: flex;
+      flex-flow: column nowrap;
+      place-content: center;
+      place-items: center;
+      gap: 1rem;
+
       h1{
+        padding-top: 2rem;
+
         font-size: 5rem;
         text-align: center;
+      }
+      div{
+        padding-bottom: 2rem;
+        a{
+          text-decoration: none;
+            
+            svg{
+              width: 32px;
+
+              path:first-of-type{
+                fill: var(--ly--color);
+              }
+            }
+        }
       }
 
       >section[filter]{
